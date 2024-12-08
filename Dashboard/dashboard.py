@@ -187,16 +187,40 @@ def conclusion_page():
     st.write('Kesimpulan dari analisis data kualitas udara: ')
     st.markdown(
         """
-1. Dara visualisasi data yang didapatkan, data PM2.5 tiap bulannya di 2016 berfluktuatif dengan peningkatan yang signifikan di antara bulan 10 hingga 12. 
-2. Rata-rata PM2.5 di tiap jamnya cenderung buruk 
-3. Dari hasil visualisasi diatas menunjukkan bahwa jika PM10 meningkat maka PM2.5 juga cenderung menignkat
-4. TEMP, PRES, DEWP, RAIN memiliki korasi rendah, yang brarti parameter ini tidak terlalu memengaruhi konsentrasi udara (PM2.5) 
-5. PM2.5 dan PM10 menunjukkan distribusi yang relatif seragam, dengan beberapa station yang memiliki pencilan seperti  Changping dan Dingling
-6.  Distribusi SO2 cenderung rendah hampir di semua station, dengan beberapa nilai outlier di beberapa station seperti Gucheng
-7.  Distrubsi CO2 memiliki konsentrasi tinggi di beberapa station seperti Aotizhongxin
-8.  TEMP memiliki distribusi yang cukup beragam di seluruh station dengan variablitas tinggi, mencerminkan perubahan suhu musiman
-9. PRES / Tekanan atmosfer menunjukkakn perubahan kecil antar-stasiun
-10. RAIN memiliki nilai yang dominan rendah di semua station.
+
+**Pertanyaan 1** (*Bagaimana tren kualitas udara di tiap station dalam satu tahun 2016?*)
+- Dara visualisasi data yang didapatkan, data PM2.5 tiap bulannya di 2016 berfluktuatif dengan peningkatan yang signifikan di antara bulan 10 hingga 12.
+- Konsentrasi PM2.5 cenderung lebih tinggi pada bulan-bulan tertentu, terutama pada bulan 2 dan 12
+-Konsentrasi terendah umumnya terjadi sekitar bulan 7-8, menunjukkan bahwa kualitas udara relatif lebih baik pada periode tersebut. 
+- Semua stasiun menunjukkan pola tren yang mirip, denan peningkatan pada awal dan akhir tahun dan penurunan pada pertengahan tahun. 
+
+
+**Pertanyaan 2** (*Apakah terdapat jam-jam tertentu dimana kualitas udara cenderung buruk ?*)
+- Rata-rata PM2.5 di tiap jamnya cenderung buruk
+- Nilai rata-rata PM2.5 tertinggi ialah 88.692261 pada pukul 22 dan terendah ialah 73.373281 pada pukul 7
+
+
+**Pertanyaan 3** *(Apakah ada hari dalam seminggu yang memiliki kualitas udara lebih buruk dibandingkan hari lainnya?)*
+- Rata-rata konsentrasi PM2.5 relatif stabil sepanjang minggu, dengan sedikit variasi
+- Selasa dan Jumat memiliki rata-rata PM2.5 yang lebih rendah dibandingkan hari lainnya. 
+- Grafik menunjukkan bahwa meskipun ada perbedaan kecil antar hari, tidak ada perbedaan yang sangat mencolok. Hal ini menunjukkan bahwa polusi PM2.5 tidak sepenuhnya dikendalikan oleh hari dalam seminggu, tetapi mungkin lebih dipengaruhi oleh faktor musiman, cuaca, atau sumber polusi lainnya.
+
+
+**Pertanyaan 4** *( Apakah ada hubungan antara suhu dan kualitas udara  ?)*
+-  Dari hasil visualisasi diatas menunjukkan bahwa jika PM10 meningkat maka PM2.5 juga cenderung menignkat
+- TEMP, PRES, DEWP, RAIN memiliki korasi rendah, yang brarti parameter ini tidak terlalu memengaruhi konsentrasi udara (PM2.5)
+- Hubungan yang kuat antara Karbon monoksida dengan PM2.5 (0.77) dengan Nitrogen dioksida NO2 (0.69). 
+- Parameter seperti O3 dan PM2.5 (-0.15) serta NO2 dengan SO2 (0.49) menunjukkan korelasi yang lebih lemah.
+
+
+
+**Analsiis Lanjutan** 
+- PM2.5 dan PM10 menunjukkan distribusi yang relatif seragam, dengan beberapa station yang memiliki pencilan seperti  Changping dan Dingling
+-  Distribusi SO2 cenderung rendah hampir di semua station, dengan beberapa nilai outlier di beberapa station seperti Gucheng
+-  Distrubsi CO2 memiliki konsentrasi tinggi di beberapa station seperti Aotizhongxin
+-  TEMP memiliki distribusi yang cukup beragam di seluruh station dengan variablitas tinggi, mencerminkan perubahan suhu musiman
+- PRES / Tekanan atmosfer menunjukkakn perubahan kecil antar-stasiun
+- RAIN memiliki nilai yang dominan rendah di semua station.
         """)
     
 # Main app
